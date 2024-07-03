@@ -2,8 +2,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 const plugin = require('tailwindcss/plugin');
-const themeColors = require('./config/themeColors.json');
-const themeFonts = require('./config/themeFonts.json');
+const themeColors = require('./config/gen3/themeColors.json');
+const themeFonts = require('./config/gen3/themeFonts.json');
 
 module.exports = {
   presets: [require('@gen3/frontend/tailwind')],

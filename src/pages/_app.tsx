@@ -1,8 +1,8 @@
 import type { AppProps } from 'next/app';
 import { useEffect } from 'react';
 import { Gen3Provider, TenStringArray, type ModalsConfig } from '@gen3/frontend';
-import themeColors from '../../config/themeColors.json';
-import themeFonts from '../../config/themeFonts.json';
+import themeColors from '../../config/gen3/themeColors.json';
+import themeFonts from '../../config/gen3/themeFonts.json';
 import icons from '../../config/icons/gen3.json';
 import '../styles/globals.css';
 import 'graphiql/graphiql.css';
@@ -11,8 +11,8 @@ import { setDRSHostnames } from '@gen3/core';
 
 
 // TODO: This can be done in a better way using newer NextJS features
-import sessionConfig from '../../config/session.json';
-import modalsConfig from '../../config/modals.json';
+import sessionConfig from '../../config/gen3/session.json';
+import modalsConfig from '../../config/gen3/modals.json';
 import drsHostnames from '../../config/drsHostnames.json';
 
 const colors = Object.fromEntries(
