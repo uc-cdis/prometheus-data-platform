@@ -53,7 +53,7 @@
         "collapsibleButtonText": "Data Commons"
       },
       "exportToWorkspace": {
-        "enabled": true,
+        "enabled": false,
         "manifestFieldName": "__manifest",
         "enableDownloadManifest": true,
         "downloadManifestButtonText": "Download",
