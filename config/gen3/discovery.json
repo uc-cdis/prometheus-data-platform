@@ -1,6 +1,6 @@
 {
   "tableConfig": {
-    "selectableRows": true,
+    "selectableRows": false,
     "expandableRows": true
   },
   "features": {
@@ -101,6 +101,7 @@
   "tagSelector": {
     "title": "Tags by category"
   },
+
   "studyColumns": [
     {
       "name": "Study Name",
@@ -219,12 +220,12 @@
         ]
       },
       {
-        "groupWidth": "full",
+        "groupWidth": "half",
         "fields": [
           {
             "name": "Description",
             "field": "study_description",
-            "contentType": "paragraphs",
+            "contentType": "paragraph",
             "includeName": true,
             "includeIfNotAvailable": true,
             "valueIfNotAvailable": "No description has been provided for this study."
