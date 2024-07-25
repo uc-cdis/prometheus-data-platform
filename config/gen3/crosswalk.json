@@ -1,14 +1,12 @@
 {
-  "showSubmittedIdInTable" : false,
-  "mapping" : {
-    "source" : {
+  "showSubmittedIdInTable": false,
+  "mapping": {
+    "source": {
       "id": "prom",
       "label": "PROMETHEUS",
-      "description" : "PROject for Military Exposures and Toxin History Evaluation in US Service Members"
+      "description": "PROject for Military Exposures and Toxin History Evaluation in US Service Members"
     },
-    // PROMETHEUS, GDC, PDC, BLOODPAC, dbGaP?
-    // /
-    "external" : [
+    "external": [
       {
         "id": "PROMETHEUS",
         "label": "PROMETHEUS",
