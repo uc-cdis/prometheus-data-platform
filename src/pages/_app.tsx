@@ -1,6 +1,6 @@
 import App, {AppProps, AppContext, AppInitialProps} from 'next/app';
 import React, {useEffect, useRef } from 'react';
-import { Faro, FaroErrorBoundary, withFaroProfiler } from "@grafana/faro-react";
+import { Faro, FaroErrorBoundary, withFaroProfiler } from '@grafana/faro-react';
 import {
   Gen3Provider,
   TenStringArray,
