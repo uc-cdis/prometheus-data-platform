@@ -13,7 +13,7 @@ export const initGrafanaFaro = () => {
     url: 'https://faro.planx-pla.net/collect',
 
     app: {
-      name: 'bih-data-commons',
+      name: 'prometheus-data-commons',
       //   version: packageJson.version,
       version: '10.0.0',
       environment: 'local',
