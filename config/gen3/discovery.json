@@ -27,6 +27,45 @@
             }
           }
         },
+        "chartsSection": {
+          "enabled": true,
+          "title": "Charts Section Title",
+          "showLegends": {"enabled":true, "showSwitch": true},
+          "charts": [
+            {
+              "title": "Platform cohort data (totals)",
+              "chartType": "fullPie",
+              "data": ["total"],
+              "dataLabels": {
+                "key": "Name",
+                "count": "Total"
+              }
+            },
+            {
+              "title": "Primary Disease",
+              "chartType": "bar",
+              "data": ["subject_primary_disease"],
+              "dataLabels": {
+                "key": "Disease",
+                "count": "# of Cases"
+              }
+            },
+            {
+              "title": "Demographics (race)",
+              "chartType": "horizontalStacked",
+              "data": ["subject_race"],
+              "dataLabels": {
+                "key": "Race",
+                "count": "Total"
+              }
+            },
+            {
+              "title": "title test 4",
+              "chartType": "donut",
+              "data": ["test_data"]
+            }
+          ]
+        },
         "aiSearch": false,
         "advSearchFilters": {
           "enabled": false,
