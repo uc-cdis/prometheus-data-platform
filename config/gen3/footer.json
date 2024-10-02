@@ -1,27 +1,46 @@
 {
   "classNames": {
-    "root": "bg-base-darkest"
+    "root": "bg-base-darkest",
+    "layout": "flex items-center justify-end"
   },
-  "footerRightLogos": [
-    [
+  "rightSection": {
+    "columns": [
       {
-        "logo": "/icons/gen3.png",
-        "width": 132,
-        "height": 60,
-        "description": "Gen3 Logo"
+        "rows": [
+          {
+            "Icon": {
+              "logo": "/images/gen3.png",
+              "width": 132,
+              "height": 60,
+              "description": "Gen3 Logo"
+            }
+          }
+        ]
       },
       {
-        "logo": "/icons/createdby.png",
-        "width": 170,
-        "height": 60,
-        "description": "Created by CTDS"
+        "rows": [
+          {
+            "Icon": {
+              "logo": "/images/createdby.png",
+              "width": 170,
+              "height": 60,
+              "description": "Created by CTDS"
+            }
+          }
+        ]
       },
       {
-        "logo": "/icons/OCC.png",
-        "width": 150,
-        "height": 60,
-        "description": "OCC"
+        "rows": [
+          {
+            "Icon": {
+              "logo": "/images/OCC.png",
+              "width": 150,
+              "height": 60,
+              "description": "OCC"
+            }
+          }
+        ]
       }
     ]
-  ]
+  }
 }
