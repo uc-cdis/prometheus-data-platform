@@ -7,8 +7,8 @@
     },
     "logo": {
       "src": "/images/Prometheus_logo.png",
-      "height": 63,
-      "width": 128,
+      "height": 58,
+      "width": 100,
       "href": "/"
     },
     "items": [
