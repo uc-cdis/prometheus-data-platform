@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */ // TODO remove use of any
 import {
   Anchor,
   Group,
@@ -51,7 +50,7 @@ const isQueryResponse = (obj: any): obj is QueryResponse => {
 const extractData = (
   data: QueryResponse,
   index: string,
-): Record<string, any> => {
+): Record<string, never> => {
   if (data === undefined || data === null) return {};
   if (data.data === undefined || data.data === null) return {};
 
@@ -61,11 +60,11 @@ const extractData = (
 };
 
 export const FileDetailsPanel = ({
-                                   id,
-                                   index,
-                                   tableConfig,
-                                   onClose,
-                                 }: TableDetailsPanelProps) => {
+  id,
+  index,
+  tableConfig,
+  onClose,
+}: TableDetailsPanelProps) => {
   // get the idField from the configuration
   const idField = tableConfig.detailsConfig?.idField;
   // call the general Guppy GQL which takes an object { query: string, variables: object }
@@ -104,11 +103,11 @@ export const FileDetailsPanel = ({
 
   // create the rows for the table
   const rows = Object.entries(queryData).map(([field, value]) => (
-    <Table.Tr key={field}>
-      <Table.Td>
-        <Text fw="bold">{field}</Text>
-      </Table.Td>
-      <Table.Td>
+    <tr key={field}>
+      <td>
+        <Text fw={700}>{field}</Text>
+      </td>
+      <td>
         {/*
           if field is one that we want a link for make it an Anchor otherwise
           render as text.
@@ -125,23 +124,23 @@ export const FileDetailsPanel = ({
         ) : (
           <Text>{value ? (value as string) : ''}</Text>
         )}
-      </Table.Td>
-    </Table.Tr>
+      </td>
+    </tr>
   ));
   return (
     <Stack>
       <LoadingOverlay visible={isLoading} />
-      <Text color="primary.4">Results for {id}</Text>
-      <Table withTableBorder withColumnBorders>
-        <Table.Th>
-          <Table.Td>
-            <Table.Th>Field</Table.Th>
-            <Table.Th>Value</Table.Th>
-          </Table.Td>
-        </Table.Th>
+      <Text c="primary.4">Results for {id}</Text>
+      <Table withColumnBorders>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Value</th>
+          </tr>
+        </thead>
         <tbody>{rows}</tbody>
       </Table>
-      <Group >
+      <Group justify="flex-end">
         <CopyButton value={JSON.stringify(queryData)} timeout={2000}>
           {({ copied, copy }) => (
             <Tooltip

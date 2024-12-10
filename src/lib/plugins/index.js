@@ -17,7 +17,7 @@ function main() {
     const plugins = JSON.parse(
         fs
             .readFileSync(path.join(process.cwd(), 'config', 'plugins.json'))
-            .toString('utf8'),
+            .toString('utf-8'),
     );
     const imports = plugins
         .map(
