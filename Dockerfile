@@ -23,7 +23,6 @@ RUN addgroup --system --gid 1001 nextjs && \
 
 COPY --from=builder /gen3/config ./config
 COPY --from=builder /gen3/public ./public
-COPY --from=builder /gen3/.next/standalone ./
 COPY --from=builder /gen3/.next/static ./.next/static
 
 USER nextjs
