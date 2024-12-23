@@ -21,6 +21,7 @@ ENV PORT=3000
 RUN addgroup --system --gid 1001 nextjs && \
     adduser --system --uid 1001 nextjs
 
+COPY --from=builder ./package.json ./package-lock.json ./next.config.js ./tsconfig.json ./tailwind.config.js ./postcss.config.js .env.production ./start.sh ./
 COPY --from=builder /gen3/config ./config
 COPY --from=builder /gen3/public ./public
 COPY --from=builder /gen3/.next/static ./.next/static
