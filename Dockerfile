@@ -23,7 +23,7 @@ RUN addgroup --system --gid 1001 nextjs && \
 COPY --from=builder /gen3/config ./config
 COPY --from=builder /gen3/public ./public
 COPY --from=builder /gen3/.next/static ./.next/static
-COPY ./start.sh ./
+COPY --from=builder /gen3/start.sh ./
 
 USER nextjs
 ENV PORT=3000
