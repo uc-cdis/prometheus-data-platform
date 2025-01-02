@@ -8,7 +8,6 @@ RUN npm ci
 COPY ./src ./src
 COPY ./public ./public
 COPY ./config ./config
-COPY ./start.sh ./
 RUN npm install @swc/core @napi-rs/magic-string && \
     npm run build
 
@@ -24,6 +23,7 @@ RUN addgroup --system --gid 1001 nextjs && \
 COPY --from=builder /gen3/config ./config
 COPY --from=builder /gen3/public ./public
 COPY --from=builder /gen3/.next/static ./.next/static
+COPY ./start.sh ./
 
 USER nextjs
 ENV PORT=3000
