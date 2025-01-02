@@ -20,10 +20,11 @@ ENV PORT=3000
 RUN addgroup --system --gid 1001 nextjs && \
     adduser --system --uid 1001 nextjs
 
+COPY --from=builder /gen3/node_modules ./node_modules
 COPY --from=builder /gen3/config ./config
 COPY --from=builder /gen3/public ./public
-COPY --from=builder /gen3/.next/static ./.next/static
-COPY --from=builder /gen3/start.sh ./
+COPY --from=builder --chown=nextjs:nextjs /gen3/.next ./.next
+COPY --from=builder /gen3/start.sh  /gen3/package.json ./
 
 USER nextjs
 ENV PORT=3000

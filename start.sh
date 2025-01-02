@@ -2,4 +2,4 @@
 
 set -e
 echo "starting server"
-next start
+npm run start
