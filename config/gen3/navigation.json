@@ -20,7 +20,7 @@
       },
       {
         "icon": "gen3:mdd",
-        "href": "/apps/MetadataDictionary",
+        "href": "/app/MetadataDictionary",
         "name": "MDD",
         "tooltip": "View the metadata data schemas."
       },

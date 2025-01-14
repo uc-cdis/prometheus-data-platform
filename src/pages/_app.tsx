@@ -12,7 +12,7 @@ import {
   RegisteredIcons,
   Fonts,
   SessionConfiguration,
-  registerCohortDiversityApp,
+  registerMetadataSchemaApp,
   registerCohortBuilderDefaultPreviewRenderers,
   registerExplorerDefaultCellRenderers,
 } from '@gen3/frontend';
@@ -68,8 +68,7 @@ const Gen3App = ({
     //   !faroRef.current
     // ) {
     if (!faroRef.current) faroRef.current = initGrafanaFaro();
-    //  registerCohortDiscoveryApp();
-    registerCohortDiversityApp();
+    registerMetadataSchemaApp();
     registerExplorerDefaultCellRenderers();
     registerCohortBuilderDefaultPreviewRenderers();
     registerCohortTableCustomCellRenderers();
