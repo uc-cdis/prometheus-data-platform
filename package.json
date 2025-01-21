@@ -1,6 +1,6 @@
 {
   "name": "prometheus-data-commons",
-  "version": "0.10.71",
+  "version": "0.10.74",
   "private": "true",
   "engines": {
     "npm": ">=10.2.3",
