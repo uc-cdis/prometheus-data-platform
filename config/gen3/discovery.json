@@ -489,6 +489,14 @@
           "cellRenderFunction": "truncated"
         },
         {
+          "name": "Synthetic Data",
+          "field": "is_synthetic",
+          "errorIfNotAvailable": false,
+          "valueIfNotAvailable": "n/a",
+          "contentType": "string",
+          "cellRenderFunction": "truncated"
+        },
+        {
           "name": "Study/Project Name",
           "field": "short_name",
           "errorIfNotAvailable": false,
