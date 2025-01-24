@@ -162,6 +162,14 @@
           }
         },
         {
+          "name": "Synthetic Data",
+          "field": "is_synthetic",
+          "errorIfNotAvailable": false,
+          "valueIfNotAvailable": "",
+          "contentType": "string",
+          "cellRenderFunction": "truncated"
+        },
+        {
           "name": "Cancer Type",
           "field": "subject_cancer_type",
           "errorIfNotAvailable": false,
