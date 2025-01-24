@@ -14,7 +14,10 @@
               "VPODC-subject-level-metadata",
               "APOLLO-subject-level-metadata",
               "BloodPAC-subject-level-metadata",
-              "Proteomic-Data-Commons-subject-level-metadata"
+              "Proteomic-Data-Commons-subject-level-metadata",
+              "VMOAT-subject-level-metadata",
+              "Metabolomic-subject-level-metadata",
+              "TCIA-subject-level-metadata"
             ],
             "hasEnoughData": {
               "keys": [
@@ -391,7 +394,10 @@
               "BloodPAC-study-level-metadata",
               "VPODC-study-level-metadata",
               "APOLLO-study-level-metadata",
-              "Proteomic-Data-Commons-study-level-metadata"
+              "Proteomic-Data-Commons-study-level-metadata",
+              "VMOAT-study-level-metadata",
+              "Metabolomic-study-level-metadata",
+              "TCIA-study-level-metadata"
             ]
           }
         },
