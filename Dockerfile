@@ -15,7 +15,7 @@ RUN npm install @swc/core @napi-rs/magic-string && \
 FROM node:20-slim AS runner
 
 WORKDIR /gen3
-ENV PORT=3000
+COPY --from=builder /gen3/start.sh /gen3/start.sh
 
 RUN addgroup --system --gid 1001 nextjs && \
     adduser --system --uid 1001 nextjs
