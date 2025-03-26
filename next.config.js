@@ -19,7 +19,6 @@ const withMDX = require('@next/mdx')({
 
 // Next configuration with support for rewrting API to existing common services
 const nextConfig = {
-  output: 'standalone',
   reactStrictMode: true,
   pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
   basePath: process.env.BASE_PATH || '',
@@ -42,6 +41,15 @@ const nextConfig = {
         ],
       },
     ];
+  },
+  async redirects() {
+    return [
+      {
+        source: '/MDD',
+        destination: '/files/minimal_metadata_elements.pdf',
+        permanent: true,
+      },
+    ]
   },
 };
 
