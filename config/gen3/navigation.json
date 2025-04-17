@@ -6,9 +6,9 @@
       "navigationPanel": "bg-base-max text-primary"
     },
     "logo": {
-      "src": "/icons/gen3-dark.svg",
-      "width": 120,
-      "height": 60,
+      "src": "/images/Prometheus_logo.png",
+      "height": 58,
+      "width": 100,
       "href": "/"
     },
     "items": [
@@ -19,22 +19,22 @@
         "tooltip": "Use free-text search and tags to rapidly find relevant studies."
       },
       {
+        "icon": "gen3:mdd",
+        "href": "/app/MetadataDictionary",
+        "name": "MDD",
+        "tooltip": "View the metadata data schemas."
+      },
+      {
+        "icon": "gen3:comparison",
+        "href": "/Crosswalk",
+        "name": "Crosswalk",
+        "tooltip": "Match ids across the mesh."
+      },
+      {
         "icon": "gen3:dictionary",
         "href": "/DataDictionary",
         "name": "Dictionary",
         "tooltip": "The Data Dictionary serves to inform the data model and is updated as new data is ingested."
-      },
-      {
-        "icon": "gen3:exploration",
-        "href": "/Explorer",
-        "name": "Exploration",
-        "tooltip": "The Exploration Page enables discovery of the data at the subject level and features a cohort builder."
-      },
-      {
-        "icon": "gen3:query",
-        "href": "/Query",
-        "name": "Query",
-        "tooltip": "Query the databases using GraphiQL."
       },
       {
         "icon": "gen3:analysis",
@@ -46,6 +46,8 @@
         "icon": "gen3:workspace",
         "href": "/Workspace",
         "name": "Workspace",
+        "href": "/Workspace",
+        "icon": "gen3:workspace",
         "tooltip": "Gen3 workspaces are secure data analysis environments in the cloud that can access data from one or more data resources."
       },
       {
@@ -53,27 +55,20 @@
         "href": "/Profile",
         "name": "Profile",
         "tooltip": "Create API keys for programmatic data access, and review your authorization privileges to datasets and services."
-      },
-      {
-        "icon": "gen3:profile",
-        "href": "/DataLibrary",
-        "name": "Data Library",
-        "tooltip": "library of data"
       }
     ]
   },
   "topBar": {
     "items": [
       {
-        "rightIcon": "gen3:upload",
-        "href": "/Submission",
-        "name": "Browse Data"
+        "href": "/MDD",
+        "name": "Minimal Metadata Elements"
       },
       {
         "href": "https://gen3.org/resources/user/",
         "name": "Documentation"
       }
     ],
-    "loginButtonVisibility": "visible"
+    "loginButtonVisibility": "hidden"
   }
 }
